@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ERPPro: Sistema ERP para Lojas com PDV, NF-e e NFC-e</title>
+<meta name="description" content="ERPPro é o sistema ERP para lojas e varejo no Brasil: PDV online, emissor de NF-e e NFC-e, controle de estoque, financeiro, crediário próprio e conector de IA. 100% nuvem.">
+<link rel="canonical" href="https://erp-pro.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="ERPPro Sistemas">
+<meta property="og:title" content="ERPPro: Sistema ERP para Lojas com PDV, NF-e e NFC-e">
+<meta property="og:description" content="Sistema ERP 100% nuvem para lojas e varejo: PDV, emissor fiscal, estoque, financeiro, crediário próprio e conector de IA.">
+<meta property="og:url" content="https://erp-pro.github.io/">
+<meta property="og:image" content="https://erp-pro.github.io/og-erppro.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://erppro.com.br/#organization",
+      "name": "ERPPro Sistemas",
+      "alternateName": ["ERPPro", "ERPPro Serviços"],
+      "url": "https://erppro.com.br/",
+      "logo": "https://erp-pro.github.io/logo-erppro.webp",
+      "foundingDate": "1998-11-09",
+      "email": "sac@erppro.com.br",
+      "founder": {"@type": "Person", "name": "Adriano Fernandes", "sameAs": "https://www.linkedin.com/in/adrianofmachado/"},
+      "sameAs": ["https://github.com/ERP-PRO", "https://erp-pro.github.io/"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ERPPro",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Sistema ERP para lojas",
+      "operatingSystem": "Web (Chrome, Firefox), Android, iOS",
+      "url": "https://erppro.com.br/",
+      "inLanguage": "pt-BR",
+      "publisher": {"@id": "https://erppro.com.br/#organization"},
+      "offers": {"@type": "Offer", "price": "99.90", "priceCurrency": "BRL", "url": "https://erppro.com.br/planos-e-precos-sistema-para-lojas/", "description": "A partir de R$ 99,90 por mês no plano anual"}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://erp-pro.github.io/#website",
+      "url": "https://erp-pro.github.io/",
+      "name": "ERPPro no GitHub",
+      "inLanguage": "pt-BR",
+      "publisher": {"@id": "https://erppro.com.br/#organization"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "O que é o ERPPro?", "acceptedAnswer": {"@type": "Answer", "text": "O ERPPro é um sistema ERP para lojas e varejo no Brasil, 100% em nuvem, que reúne PDV (frente de caixa), emissor de NF-e e NFC-e, controle de estoque, financeiro, crediário próprio, catálogo digital e relatórios num só lugar."}},
+        {"@type": "Question", "name": "Quanto custa o ERPPro?", "acceptedAnswer": {"@type": "Answer", "text": "O ERPPro começa em R$ 99,90 por mês no plano anual e R$ 125,00 no plano mensal. Os planos são Start, Gestor, Master e Elite."}},
+        {"@type": "Question", "name": "O ERPPro emite nota fiscal?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O ERPPro emite NF-e, NFC-e e NFS-e, além de CT-e e MDF-e, e usa certificado digital A1. O sistema envia ao cliente o PDF e o XML da nota."}},
+        {"@type": "Question", "name": "O ERPPro funciona com ChatGPT e Claude?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O conector de IA do ERPPro liga o ChatGPT ou o Claude aos dados da loja para consultar vendas, equipe, alertas, produtos em falta e totais financeiros. Ele é só de leitura e não altera dados."}},
+        {"@type": "Question", "name": "Precisa instalar o ERPPro no computador?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O ERPPro é 100% nuvem e roda em qualquer navegador, com recomendação para Chrome e Firefox. A implantação por máquina leva em média 25 minutos."}}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{--blue:#2557c2;--blue-d:#173a85;--red:#e3302a;--ink:#111418;--muted:#545b66;--line:#e3e6eb;--bg:#ffffff;--soft:#f4f6fa;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root{--blue:#7ea4ff;--blue-d:#c9d8ff;--red:#ff6b62;--ink:#eef1f5;--muted:#a8b0bc;--line:#2a3039;--bg:#0f1216;--soft:#161a20;--card:#1a1f26}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--blue)}
+a:hover{color:var(--red)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+header img{height:30px;width:auto;display:block}
+@media (prefers-color-scheme:dark){header img,.logo-foot{background:#fff;border-radius:6px;padding:4px 8px}}
+nav{display:flex;gap:18px;font-size:15px}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--blue)}
+.cta{display:inline-block;background:var(--blue);color:#fff!important;text-decoration:none;padding:12px 22px;border-radius:10px;font-weight:600}
+.cta:hover{background:var(--red)}
+.cta.ghost{background:transparent;color:var(--blue)!important;border:2px solid var(--blue)}
+.cta.ghost:hover{border-color:var(--red);color:var(--red)!important}
+.hero{padding:72px 0 56px;background:linear-gradient(180deg,var(--soft),var(--bg))}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:0 0 18px;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--blue)}
+.lead{font-size:20px;color:var(--muted);max-width:720px;margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat b{display:block;font-size:26px;color:var(--blue)}
+.stat span{font-size:14px;color:var(--muted)}
+section{padding:64px 0}
+section.alt{background:var(--soft)}
+h2{font-size:clamp(26px,3.4vw,36px);line-height:1.2;margin:0 0 14px;letter-spacing:-.01em}
+h3{font-size:19px;margin:0 0 8px}
+.sub{color:var(--muted);max-width:760px;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;border-top:4px solid var(--blue)}
+.card:nth-child(3n+2){border-top-color:var(--red)}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips a{display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);text-decoration:none;color:var(--ink);font-size:15px}
+.chips a:hover{border-color:var(--blue);color:var(--blue)}
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.plan h3{color:var(--blue)}
+.plan p{margin:0;font-size:15px;color:var(--muted)}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;font-size:15px}
+.panel .q{background:var(--soft);border-radius:10px;padding:10px 14px;margin:0 0 10px}
+.panel .a{border-left:3px solid var(--blue);padding:4px 14px;color:var(--muted);margin:0 0 14px}
+ul.check{list-style:none;padding:0;margin:0 0 24px}
+ul.check li{padding-left:28px;position:relative;margin:8px 0}
+ul.check li:before{content:"";position:absolute;left:0;top:9px;width:14px;height:8px;border-left:3px solid var(--red);border-bottom:3px solid var(--red);transform:rotate(-45deg)}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.timeline div{border-left:3px solid var(--blue);padding:4px 0 4px 14px}
+.timeline b{display:block;font-size:22px;color:var(--red)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:0 0 12px}
+summary{font-weight:600;cursor:pointer}
+details p{margin:10px 0 0;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:36px 0;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+.logo-foot{height:26px;width:auto}
+@media (max-width:860px){.grid,.plans{grid-template-columns:1fr 1fr}.stats,.timeline{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}nav{display:none}}
+@media (max-width:520px){.grid,.plans{grid-template-columns:1fr}.hero{padding:48px 0 40px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="https://erppro.com.br/" aria-label="ERPPro, sistema ERP para lojas"><img src="logo-erppro.webp" alt="ERPPro sistema ERP para lojas" width="117" height="30"></a>
+    <nav aria-label="Seções">
+      <a href="#recursos">Recursos</a>
+      <a href="#segmentos">Segmentos</a>
+      <a href="#ia">Conector de IA</a>
+      <a href="#planos">Planos</a>
+      <a href="#perguntas">Perguntas</a>
+    </nav>
+    <a class="cta" href="https://erppro.com.br/planos-e-precos-sistema-para-lojas/">Ver planos</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">ERPPro Sistemas · desde 1998</span>
+    <h1>Sistema ERP para lojas que <em>vende, emite nota e controla o estoque</em> num lugar só</h1>
+    <p class="lead">O <a href="https://erppro.com.br/">ERPPro</a> é um <a href="https://erppro.com.br/sistema-erp/">sistema ERP</a> 100% em nuvem feito para o varejo brasileiro: <a href="https://erppro.com.br/sistema-pdv/">PDV</a>, <a href="https://erppro.com.br/emissor-de-cupom-fiscal-e-nota-fiscal/">emissor de cupom fiscal e nota fiscal</a>, <a href="https://erppro.com.br/controle-de-estoque/">controle de estoque</a>, financeiro e <a href="https://erppro.com.br/crediario-proprio/">crediário próprio</a>, do caixa da loja pequena à rede com várias filiais.</p>
+    <div class="actions">
+      <a class="cta" href="https://erppro.com.br/">Conhecer o ERPPro</a>
+      <a class="cta ghost" href="https://erppro.com.br/funcionalidades/">Ver funcionalidades</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>+8.000</b><span>clientes atendidos</span></div>
+      <div class="stat"><b>1998</b><span>primeiro CNPJ da trajetória</span></div>
+      <div class="stat"><b>100% nuvem</b><span>roda no navegador</span></div>
+      <div class="stat"><b>~25 min</b><span>implantação por máquina</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="recursos">
+  <div class="wrap">
+    <h2>O que o sistema ERPPro faz pela sua loja</h2>
+    <p class="sub">Tudo o que o lojista usa no dia a dia, ligado entre si: o que sai no caixa baixa do estoque, entra no financeiro e aparece nos relatórios.</p>
+    <div class="grid">
+      <div class="card"><h3><a href="https://erppro.com.br/pdv-online/">PDV online e offline</a></h3><p>Frente de caixa rápida que continua vendendo mesmo se a internet cair, com <a href="https://erppro.com.br/pre-venda-pdv/">pré-venda</a> e <a href="https://erppro.com.br/sistema-de-caixa-para-loja/">controle de caixa</a>.</p></div>
+      <div class="card"><h3><a href="https://erppro.com.br/emissor-de-nota-fiscal/">NF-e, NFC-e e NFS-e</a></h3><p>Emissão fiscal integrada à SEFAZ, com envio do PDF e do XML ao cliente e <a href="https://erppro.com.br/entrada-de-nota-fiscal-automatica/">entrada de nota automática</a>.</p></div>
+      <div class="card"><h3><a href="https://erppro.com.br/controle-de-estoque/">Controle de estoque</a></h3><p>Estoque em tempo real, grade de tamanhos e cores, <a href="https://erppro.com.br/cotacao-de-compras/">cotação de compras</a> e alerta de produto em falta.</p></div>
+      <div class="card"><h3><a href="https://erppro.com.br/sistema-de-gestao-financeira/">Gestão financeira</a></h3><p>Contas a pagar e a receber, <a href="https://erppro.com.br/retorno-bancario/">retorno bancário</a> e <a href="https://erppro.com.br/cobranca-automatica/">cobrança automática pelo WhatsApp</a>.</p></div>
+      <div class="card"><h3><a href="https://erppro.com.br/crediario-proprio/">Crediário próprio</a></h3><p>Venda a prazo com carnê em PDF e controle de quem deve, sem depender de financeira.</p></div>
+      <div class="card"><h3><a href="https://erppro.com.br/catalogo-digital/">Catálogo digital</a></h3><p>Vitrine online com preço e disponibilidade direto do ERP; o pedido do cliente vira orçamento automaticamente.</p></div>
+      <div class="card"><h3><a href="https://erppro.com.br/loja-virtual/">Loja virtual</a> e <a href="https://erppro.com.br/marketplaces/">marketplaces</a></h3><p>Venda online com o mesmo estoque da loja física e <a href="https://erppro.com.br/integracoes/">integrações</a> com as principais plataformas.</p></div>
+      <div class="card"><h3><a href="https://erppro.com.br/relatorios-e-dashboards/">Relatórios e dashboards</a></h3><p>Vendas, margem, equipe e estoque num painel, mais o app <a href="https://erppro.com.br/painel-do-dono/">Painel do Dono</a> no celular.</p></div>
+      <div class="card"><h3><a href="https://erppro.com.br/reforma-tributaria/">Reforma Tributária</a></h3><p>Campos de IBS e CBS prontos e o <a href="https://erppro.com.br/auditor-fiscal/">Auditor Fiscal</a> com radar e simuladores para a transição.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="segmentos" class="alt">
+  <div class="wrap">
+    <h2>Sistema para cada tipo de loja</h2>
+    <p class="sub">O ERPPro já vem ajustado para a rotina de cada segmento do varejo. Escolha o seu e veja como o <a href="https://erppro.com.br/sistema-para-varejo/">sistema para varejo</a> funciona na prática.</p>
+    <div class="chips">
+      <a href="https://erppro.com.br/sistema-para-lojas-de-roupas/">Loja de roupas</a>
+      <a href="https://erppro.com.br/sistema-para-loja-de-calcados/">Loja de calçados</a>
+      <a href="https://erppro.com.br/sistema-para-autopecas/">Autopeças</a>
+      <a href="https://erppro.com.br/sistema-para-lojas-de-cosmeticos/">Cosméticos</a>
+      <a href="https://erppro.com.br/sistema-para-loja-de-material-de-construcao/">Material de construção</a>
+      <a href="https://erppro.com.br/sistema-para-lojas-de-ferragens/">Ferragens</a>
+      <a href="https://erppro.com.br/sistema-para-papelarias-e-material-escolar/">Papelaria</a>
+      <a href="https://erppro.com.br/sistema-para-pet-shop/">Pet shop</a>
+      <a href="https://erppro.com.br/sistema-para-lojas-de-agropecuaria/">Agropecuária</a>
+      <a href="https://erppro.com.br/sistema-para-mercadinhos/">Mercadinho</a>
+      <a href="https://erppro.com.br/sistema-para-supermercado/">Supermercado</a>
+      <a href="https://erppro.com.br/sistema-para-distribuidora-de-bebidas/">Distribuidora de bebidas</a>
+      <a href="https://erppro.com.br/sistema-para-adega/">Adega</a>
+      <a href="https://erppro.com.br/sistema-para-loja-de-celular/">Loja de celular</a>
+      <a href="https://erppro.com.br/sistema-para-otica/">Ótica</a>
+      <a href="https://erppro.com.br/sistema-para-farmacia/">Farmácia</a>
+      <a href="https://erppro.com.br/sistema-para-loja-de-semijoias/">Semijoias</a>
+      <a href="https://erppro.com.br/sistema-para-loja-de-moveis/">Móveis</a>
+      <a href="https://erppro.com.br/sistema-para-loja-de-utilidades-e-presentes/">Utilidades e presentes</a>
+      <a href="https://erppro.com.br/sistema-para-loja-de-produtos-naturais/">Produtos naturais</a>
+      <a href="https://erppro.com.br/sistema-para-brecho/">Brechó</a>
+      <a href="https://erppro.com.br/sistema-para-restaurante/">Restaurante</a>
+      <a href="https://erppro.com.br/sistema-para-lanchonete/">Lanchonete</a>
+      <a href="https://erppro.com.br/sistema-para-padaria/">Padaria</a>
+      <a href="https://erppro.com.br/sistema-para-pizzaria/">Pizzaria</a>
+      <a href="https://erppro.com.br/sistema-para-assistencia-tecnica/">Assistência técnica</a>
+      <a href="https://erppro.com.br/sistema-para-mei/">MEI</a>
+      <a href="https://erppro.com.br/erp-para-pequenas-empresas/">Pequenas empresas</a>
+      <a href="https://erppro.com.br/segmentos/">Todos os segmentos →</a>
+    </div>
+  </div>
+</section>
+
+<section id="ia">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Novo</span>
+      <h2>Conector de IA: pergunte ao ChatGPT ou ao Claude como vai a sua loja</h2>
+      <p>O <a href="https://erppro.com.br/conector-ia/">conector de IA do ERPPro</a> usa o padrão MCP (Model Context Protocol) para ligar o ChatGPT e o Claude aos dados da sua empresa. O dono da loja pergunta em português e recebe a resposta na hora.</p>
+      <ul class="check">
+        <li>Resumo de vendas por período e por loja</li>
+        <li>Desempenho da equipe de vendas</li>
+        <li>Alertas da empresa e produtos em falta no estoque</li>
+        <li>Totais de contas a receber e a pagar</li>
+        <li>Só leitura: não altera dados, não emite nota e não movimenta dinheiro</li>
+      </ul>
+      <a class="cta" href="https://erppro.com.br/conector-ia/">Ver como conectar</a>
+    </div>
+    <div class="panel" aria-label="Exemplo de conversa com o conector de IA">
+      <p class="q">Quanto a loja vendeu esta semana e quem vendeu mais?</p>
+      <p class="a">Resumo de vendas da semana por loja, com o ranking dos vendedores.</p>
+      <p class="q">Quais produtos estão em falta e precisam de reposição?</p>
+      <p class="a">Lista de produtos zerados ou abaixo do mínimo, por loja.</p>
+      <p class="q">Quanto tenho a receber e a pagar nos próximos dias?</p>
+      <p class="a">Totais de contas a receber e a pagar do período.</p>
+    </div>
+  </div>
+</section>
+
+<section id="planos" class="alt">
+  <div class="wrap">
+    <h2>Planos do ERPPro</h2>
+    <p class="sub">A partir de <strong>R$ 99,90 por mês no plano anual</strong> (R$ 125,00 no mensal). Veja o que cada plano inclui na página de <a href="https://erppro.com.br/planos-e-precos-sistema-para-lojas/">planos e preços do sistema para lojas</a>.</p>
+    <div class="plans">
+      <div class="plan"><h3>Start</h3><p>Para começar com PDV, emissão de nota e estoque.</p></div>
+      <div class="plan"><h3>Gestor</h3><p>Crediário próprio com carnê, catálogo digital e venda sob encomenda.</p></div>
+      <div class="plan"><h3>Master</h3><p>ERP, PDV com multi-marketplaces, e-commerce, CRM e relatórios avançados.</p></div>
+      <div class="plan"><h3>Elite</h3><p>Para redes: filiais, multi lojas e multiempresas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="historia">
+  <div class="wrap">
+    <h2>Uma trajetória de quase 30 anos no varejo</h2>
+    <p class="sub">A ERPPro começou atendendo lojas em Brasília e cresceu junto com os clientes. Conheça a história completa em <a href="https://erppro.com.br/quem-somos/">Quem Somos</a>.</p>
+    <div class="timeline">
+      <div><b>1996</b>Início das atividades em Brasília, atendendo o comércio de Taguatinga, Samambaia e do Plano Piloto.</div>
+      <div><b>1998</b>Abertura do primeiro CNPJ da trajetória que levou à ERPPro.</div>
+      <div><b>2009</b>Virada para o modelo SaaS e expansão para Goiânia, Curitiba e Fortaleza.</div>
+      <div><b>Hoje</b>ERP 100% nuvem, apps no celular e conector de IA para ChatGPT e Claude.</div>
+    </div>
+  </div>
+</section>
+
+<section id="perguntas" class="alt">
+  <div class="wrap">
+    <h2>Perguntas frequentes sobre o ERPPro</h2>
+    <details open><summary>O que é o ERPPro?</summary><p>O ERPPro é um sistema ERP para lojas e varejo no Brasil, 100% em nuvem, que reúne PDV (frente de caixa), emissor de NF-e e NFC-e, controle de estoque, financeiro, crediário próprio, catálogo digital e relatórios num só lugar.</p></details>
+    <details><summary>Quanto custa o ERPPro?</summary><p>O ERPPro começa em R$ 99,90 por mês no plano anual e R$ 125,00 no plano mensal. Os planos são Start, Gestor, Master e Elite. Detalhes em <a href="https://erppro.com.br/planos-e-precos-sistema-para-lojas/">planos e preços</a>.</p></details>
+    <details><summary>O ERPPro emite nota fiscal?</summary><p>Sim. O ERPPro emite NF-e, NFC-e e NFS-e, além de CT-e e MDF-e, e usa certificado digital A1. O sistema envia ao cliente o PDF e o XML da nota. Veja o <a href="https://erppro.com.br/emissor-de-cupom-fiscal-e-nota-fiscal/">emissor de cupom fiscal e nota fiscal</a>.</p></details>
+    <details><summary>O ERPPro funciona com ChatGPT e Claude?</summary><p>Sim. O <a href="https://erppro.com.br/conector-ia/">conector de IA</a> liga o ChatGPT ou o Claude aos dados da loja para consultar vendas, equipe, alertas, produtos em falta e totais financeiros. Ele é só de leitura e não altera dados.</p></details>
+    <details><summary>Precisa instalar o ERPPro no computador?</summary><p>Não. O ERPPro é 100% nuvem e roda em qualquer navegador, com recomendação para Chrome e Firefox. A implantação por máquina leva em média 25 minutos. Para montar o caixa, veja os <a href="https://erppro.com.br/equipamentos-para-pdv/">equipamentos para PDV</a> recomendados.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img class="logo-foot" src="logo-erppro.webp" alt="ERPPro" width="101" height="26"><br>
+      ERPPro Sistemas · <a href="mailto:sac@erppro.com.br">sac@erppro.com.br</a><br>
+      Suporte de segunda a segunda, das 8h às 18h (conforme o plano).
+    </div>
+    <div>
+      <a href="https://erppro.com.br/">Site oficial</a> ·
+      <a href="https://erppro.com.br/blog/">Blog</a> ·
+      <a href="https://erppro.com.br/central-de-ajuda/">Central de ajuda</a> ·
+      <a href="https://erppro.com.br/politica-de-privacidade/">Privacidade</a> ·
+      <a href="https://erppro.com.br/termo-de-uso/">Termo de uso</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

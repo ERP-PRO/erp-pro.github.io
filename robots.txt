@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://erp-pro.github.io/sitemap.xml
